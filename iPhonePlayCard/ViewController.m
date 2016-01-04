@@ -7,18 +7,21 @@
 //
 
 #import "ViewController.h"
+#import "PlayingCardDeck.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *flipLabel;
 @property (nonatomic) int flipCount;
+@property (strong, nonatomic) PlayingCardDeck *cardDeck;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.cardDeck = [[PlayingCardDeck alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,7 +35,7 @@
         [sender setTitle:@"" forState:UIControlStateNormal];
     } else {
         [sender setBackgroundImage:[UIImage imageNamed:@"frontcard"] forState:UIControlStateNormal];
-        [sender setTitle:@"A♦︎" forState:UIControlStateNormal];
+        [sender setTitle:[self.cardDeck drawRandomCard].content forState:UIControlStateNormal];
     }
     self.flipCount++;
     [self.flipLabel setText:[NSString stringWithFormat:@"Flip: %d", self.flipCount]];

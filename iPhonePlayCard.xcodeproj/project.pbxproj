@@ -15,8 +15,9 @@
 		6353EE521C38CA9100F13ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6353EE501C38CA9100F13ABC /* LaunchScreen.storyboard */; };
 		6353EE5D1C38CA9100F13ABC /* iPhonePlayCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6353EE5C1C38CA9100F13ABC /* iPhonePlayCardTests.m */; };
 		6353EE681C38CFE900F13ABC /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 6353EE671C38CFE900F13ABC /* Card.m */; };
-		6353EE6B1C38D03900F13ABC /* PlayCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6353EE6A1C38D03900F13ABC /* PlayCard.m */; };
-		6353EE6E1C38D06C00F13ABC /* PlayCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6353EE6D1C38D06C00F13ABC /* PlayCardDeck.m */; };
+		6353EE6B1C38D03900F13ABC /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6353EE6A1C38D03900F13ABC /* PlayingCard.m */; };
+		6353EE6E1C38D06C00F13ABC /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6353EE6D1C38D06C00F13ABC /* Deck.m */; };
+		6353EE711C3A2B3300F13ABC /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6353EE701C3A2B3300F13ABC /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +46,12 @@
 		6353EE5E1C38CA9100F13ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6353EE671C38CFE900F13ABC /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		6353EE691C38D01200F13ABC /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
-		6353EE6A1C38D03900F13ABC /* PlayCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayCard.m; path = Model/PlayCard.m; sourceTree = "<group>"; };
-		6353EE6C1C38D05400F13ABC /* PlayCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PlayCard.h; path = Model/PlayCard.h; sourceTree = "<group>"; };
-		6353EE6D1C38D06C00F13ABC /* PlayCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayCardDeck.m; path = Model/PlayCardDeck.m; sourceTree = "<group>"; };
-		6353EE6F1C38D07B00F13ABC /* PlayCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PlayCardDeck.h; path = Model/PlayCardDeck.h; sourceTree = "<group>"; };
+		6353EE6A1C38D03900F13ABC /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
+		6353EE6C1C38D05400F13ABC /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Model/PlayingCard.h; sourceTree = "<group>"; };
+		6353EE6D1C38D06C00F13ABC /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
+		6353EE6F1C38D07B00F13ABC /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
+		6353EE701C3A2B3300F13ABC /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
+		6353EE721C3A2B4400F13ABC /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +103,13 @@
 				6353EE531C38CA9100F13ABC /* Info.plist */,
 				6353EE421C38CA9100F13ABC /* Supporting Files */,
 				6353EE671C38CFE900F13ABC /* Card.m */,
-				6353EE6D1C38D06C00F13ABC /* PlayCardDeck.m */,
-				6353EE6F1C38D07B00F13ABC /* PlayCardDeck.h */,
-				6353EE6A1C38D03900F13ABC /* PlayCard.m */,
-				6353EE6C1C38D05400F13ABC /* PlayCard.h */,
 				6353EE691C38D01200F13ABC /* Card.h */,
+				6353EE701C3A2B3300F13ABC /* PlayingCardDeck.m */,
+				6353EE721C3A2B4400F13ABC /* PlayingCardDeck.h */,
+				6353EE6D1C38D06C00F13ABC /* Deck.m */,
+				6353EE6F1C38D07B00F13ABC /* Deck.h */,
+				6353EE6A1C38D03900F13ABC /* PlayingCard.m */,
+				6353EE6C1C38D05400F13ABC /* PlayingCard.h */,
 			);
 			path = iPhonePlayCard;
 			sourceTree = "<group>";
@@ -230,8 +235,9 @@
 				6353EE471C38CA9100F13ABC /* AppDelegate.m in Sources */,
 				6353EE441C38CA9100F13ABC /* main.m in Sources */,
 				6353EE681C38CFE900F13ABC /* Card.m in Sources */,
-				6353EE6E1C38D06C00F13ABC /* PlayCardDeck.m in Sources */,
-				6353EE6B1C38D03900F13ABC /* PlayCard.m in Sources */,
+				6353EE711C3A2B3300F13ABC /* PlayingCardDeck.m in Sources */,
+				6353EE6E1C38D06C00F13ABC /* Deck.m in Sources */,
+				6353EE6B1C38D03900F13ABC /* PlayingCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
